@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>Mini-Webserver</title>
+    <meta charset="UTF-8">
+    <title>Koninis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hallo Konini!</h1>
-    <p>Dein Webserver läuft erfolgreich.</p>
+    <div class="container">
+        <h1 id="title">Hallo Konini!</h1>
+        <p id="clock"></p>
+        <p id="quote"></p>
+
+        <button onclick="loadInfo()">API testen</button>
+        <pre id="output"></pre>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
